@@ -2,8 +2,7 @@ import React from 'react';
 import Cronometro from './components/cronometro';
 
 function App() {
-  const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 29); // 2 dias a partir de hoje
+  const targetDate = new Date('2024-07-20T07:00:00'); // Data e hora específica
 
   return (
     <div className="App">
