@@ -2,7 +2,7 @@
 function App() {
   return (
     <>
-      <h1>Prueba de React</h1>
+      <h1>Sinfcor</h1>
     </>
   );
 }
