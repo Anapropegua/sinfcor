@@ -2,15 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Preview
-
-### Section 1
-![Preview](src/assets/preview/sec-1.png)
-![Preview](src/assets/preview/mobile-sec-1.png)
-
-### Section 2
-em construção....
-
 ## Available Scripts
 
 In the project directory, you can run:

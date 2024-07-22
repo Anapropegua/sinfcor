@@ -1,4 +1,4 @@
 import IfpiLogo from "./Ifpi";
-import SinficorLogo from "./Sinfcor";
+import SinfcorLogo from "./Sinfcor";
 
-export { IfpiLogo, SinficorLogo };
+export { IfpiLogo, SinfcorLogo };

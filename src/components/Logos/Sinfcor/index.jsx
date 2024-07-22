@@ -1,11 +1,11 @@
 import {LogoContainer, Logo} from './styles'
 
-const SinficorLogo = () => {
+const SinfcorLogo = () => {
     return (
         <LogoContainer>
-            <Logo>Sinficor</Logo>
+            <Logo>Sinfcor</Logo>
         </LogoContainer>
     );
 }
 
-export default SinficorLogo;
+export default SinfcorLogo;

@@ -3,7 +3,7 @@ import Container from "../../components/Container";
 import Presentation from "../../components/Presentation";
 import WaveComponent from "../../components/Wave";
 import NavBarComponent from "../../components/Navbar";
-import {SinficorLogo} from "../../components/Logos";
+import {SinfcorLogo} from "../../components/Logos";
 import TimerComponent from "../../components/Timer";
 
 const HomePage = () => {
@@ -13,7 +13,7 @@ const HomePage = () => {
                 <Presentation/>
                 <WaveComponent>
                     <NavBarComponent/>
-                    <SinficorLogo/>
+                    <SinfcorLogo/>
                 </WaveComponent>
             </Container>
             <Container padding="1rem">
