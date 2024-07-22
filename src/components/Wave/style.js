@@ -28,6 +28,17 @@ const Wave = styled.div`
         }
     }
 
+    @media (max-width: 768px) {
+        height: 30%;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0;
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+        height: 80%;
+        gap: 2rem;
+    }
 
 `;
 

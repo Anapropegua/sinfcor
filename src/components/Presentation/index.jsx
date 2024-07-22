@@ -1,5 +1,4 @@
-import StyledMain from './styles'
-import Container from "../Container";
+import StyledMain from './styles';
 import {IfpiLogo} from "../Logos";
 import Title from "../Title";
 import Paragraph from "../Text";
@@ -10,7 +9,6 @@ const Presentation = () => {
 
     return (
         <StyledMain>
-
             <IfpiLogo/>
             <Title/>
             <Paragraph>

@@ -9,7 +9,7 @@ import TimerComponent from "../../components/Timer";
 const HomePage = () => {
     return (
         <Layout>
-            <Container height="70vh">
+            <Container height="70vh" mobile={{direction: 'column-reverse', justify: 'flex-end', height: "60vh"}}>
                 <Presentation/>
                 <WaveComponent>
                     <NavBarComponent/>

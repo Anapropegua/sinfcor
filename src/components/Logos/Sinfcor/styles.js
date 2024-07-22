@@ -10,6 +10,11 @@ const LogoContainer = styled.div`
     justify-content: center;
     color: #ffffff;
     padding: 1rem;
+    
+    @media (max-width: 768px) {
+        align-items: center;
+        padding: 2rem;
+    }
 `;
 
 const Logo = styled.h1`

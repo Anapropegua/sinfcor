@@ -12,6 +12,11 @@ const TimerContainer = styled.div`
 
     background-color: #242565;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+    }
 `;
 
 const TimerItem = styled.div`
@@ -24,6 +29,11 @@ const TimerItem = styled.div`
     color: #fff;
     
     border-bottom: 1px solid #fff;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 1rem 0;
+    }
     
 `;
 

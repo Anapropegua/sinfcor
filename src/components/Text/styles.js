@@ -4,6 +4,10 @@ const StyledText = styled.p`
     font-size: 1.2rem;
     font-weight: 400;
     color: #000;
+    
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 `;
 
 const TextContainer = styled.div`
@@ -14,6 +18,10 @@ const TextContainer = styled.div`
     align-items: center;
     
     padding: 0 2.5rem;
+    
+    @media (max-width: 768px) {
+        padding: 0 1rem;
+    }
     
 `;
 

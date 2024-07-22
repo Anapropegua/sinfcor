@@ -11,6 +11,16 @@ const StyledMain = styled.main`
     
     padding: 1rem;
     
+    @media (max-width: 768px) {
+        height: 50%;
+        width: 100%;
+        padding: 0;
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 70%;
+    }
+    
 `;
 
 export default StyledMain;
