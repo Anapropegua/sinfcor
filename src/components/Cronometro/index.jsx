@@ -10,7 +10,6 @@ const Cronometro = ({ targetDate }) => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
       };
     }
 
@@ -41,16 +40,8 @@ const Cronometro = ({ targetDate }) => {
     );
   });
 
-  const formatTargetDate = (date) => {
-    const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-    return new Date(date).toLocaleDateString('pt-BR', options);
-  };
-
   return (
     <div className="cronometro">
-      <div className="target-date">
-        Evento começa em: {formatTargetDate(targetDate)}
-      </div>
       <div className="time">
         {timerComponents.length ? timerComponents : <span>Tempo esgotado!</span>}
       </div>

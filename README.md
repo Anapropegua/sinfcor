@@ -2,9 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Preview
+
+### Section 1
+![Preview](src/assets/preview/sec-1.png)
+
+### Section 2
+em construção....
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+This command will install all the dependencies required for the project to run. This command should be run before running the project for the first time.
 
 ### `npm start`
 

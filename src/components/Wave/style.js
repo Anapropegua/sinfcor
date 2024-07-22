@@ -3,11 +3,17 @@ import background from '../../assets/wave.png';
 
 const Wave = styled.div`
 
-    width: 50%;
-    height: 400px;
+    width: 100%;
+    height: 90%;
+    
+    align-self: flex-start;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    gap: 2.5rem;
+
     background-image: url(${background});
     background-size: cover;
     background-repeat: no-repeat;
