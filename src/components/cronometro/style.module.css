@@ -1,0 +1,41 @@
+.cronometro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /* Adiciona espaçamento entre os frames */
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #242565;
+    border-radius: 20px;
+   
+    position: relative;
+    justify-items: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 2px solid #3d3e7c ;
+    height: 120px
+}
+
+.box span { 
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    color: #fff; /* Cor do texto */
+}
+
+.box label {
+    width: 100%;
+    padding: 2px;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #fff;
+}

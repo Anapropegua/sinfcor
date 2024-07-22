@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import style from './style.module.css';
 
 const Cronometro = ({ targetDate }) => {
   const calculateTimeLeft = () => {
@@ -7,10 +8,10 @@ const Cronometro = ({ targetDate }) => {
 
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
+        D: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        H: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        M: Math.floor((difference / 1000 / 60) % 60),
+        // S: Math.floor((difference / 1000) % 60)
       };
     }
 
@@ -35,9 +36,9 @@ const Cronometro = ({ targetDate }) => {
     }
 
     timerComponents.push(
-      <span key={interval}>
-        {timeLeft[interval]} {interval}{" "}
-      </span>
+      <label key={interval}>
+        {timeLeft[interval]}{" - "}{interval}{" "}
+      </label>
     );
   });
 
@@ -47,12 +48,20 @@ const Cronometro = ({ targetDate }) => {
   };
 
   return (
-    <div className="cronometro">
-      <div className="target-date">
-        Evento começa em: {formatTargetDate(targetDate)}
+    <div className={style.cronometro}>
+      <div className={style.box}>
+        <span>Tempo</span>
+        <label>   
+               {timerComponents.length ? timerComponents : <span>Tempo esgotado!</span>}
+        </label>
       </div>
-      <div className="time">
-        {timerComponents.length ? timerComponents : <span>Tempo esgotado!</span>}
+      <div className={style.box}>
+        <span>Onde</span>
+        <label>IFPI - Corrente</label>
+      </div>
+      <div className={style.box}>
+        <span>Data</span>
+        <label>15 a 17 Agosto</label>
       </div>
     </div>
   );
