@@ -1,8 +1,9 @@
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <h1>Prueba de React</h1>
+    <Footer />
     </>
   );
 }
