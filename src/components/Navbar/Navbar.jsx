@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Box, Button, Container, Toolbar, Typography } from "@mui/material";
-import LogoIF from '../src/assets/Logo-IFPI.png';
+import LogoIF from '../../assets/Logo-IFPI.png';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
